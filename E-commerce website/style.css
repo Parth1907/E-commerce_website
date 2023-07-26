@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.logo {
+  width: 7%;
+}
+
+.admin-image {
+  width: 100px;
+  object-fit: contain;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+#cart-table-product-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* .profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin-top: 15px;
+} */
+.profile-img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.edit_img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+/* not included in video */
+
+.button button a {
+  padding: 8px;
+}
+
+.button button {
+  margin-bottom: 8px;
+}
+
+#product-text {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  /* margin-top: 100px; */
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem; /* Footer height */
+}
+
+td {
+  vertical-align: middle;
+  padding: 0px;
+}
+
+#profile-bg {
+  background: rgb(206, 201, 201);
+}
