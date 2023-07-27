@@ -42,7 +42,7 @@ body {
   margin: auto;
 }
 
-.edit_img {
+.edit-img {
   width: 100px;
   height: 100px;
   object-fit: contain;

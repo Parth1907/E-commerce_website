@@ -126,10 +126,16 @@ session_start();
                 if (isset($_GET['edit_account'])) {
                     include('edit_account.php');
                 }
+                if (isset($_GET['my_orders'])) {
+                    include('my_orders.php');
+                }
+                if (isset($_GET['delete_account'])) {
+                    include('delete_account.php');
+                }
                 ?>
             </div>
         </section>
-
+                
         <!-- Footer -->
         <?php
         include('../includes/footer.php');
