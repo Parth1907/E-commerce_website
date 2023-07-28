@@ -178,7 +178,7 @@ session_start();
                         if ($result_count > 0) {
                             echo   "<h4 class='px-3 m-3'>Subtotal: <strong class='text-info'>&#8377;$total_price/-</strong></h4>
                                 <input type='submit' value='Continue shopping' class='bg-info px-3 px-2 m-3 border-0' name='continue_shopping'>
-                                <buttton class='bg-secondary px-3 px-2 m-3 border-0'><a class='text-light text-decoration-none' href='users_area/checkout.php'>Checkout</a></button>";
+                                <buttton class='bg-secondary px-3 px-2 m-3 border-0'><a class='text-light text-decoration-none' href='./users_area/checkout.php'>Checkout</a></button>";
                         } else {
                             echo "<input type='submit' value='Continue shopping' class='bg-info px-3 px-2 m-3 border-0' name='continue_shopping'>";
                         }
