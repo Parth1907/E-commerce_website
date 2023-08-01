@@ -1,5 +1,7 @@
 <?php
 include('../includes/connect.php');
+session_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +25,7 @@ include('../includes/connect.php');
 
 <body>
     <div id="page-container">
-        <div class="container-fluid p-0" >
+        <div class="container-fluid p-0">
             <!-- navbar -->
             <nav class="navbar navbar-expand-lg navbar-light bg-info">
                 <div class="container-fluid">
@@ -31,11 +33,33 @@ include('../includes/connect.php');
                         alt="Logo" class="logo">
                     <nav class="navbar navbar-expand-lg">
                         <ul class="navbar-nav">
-                            <li class="nav-item">
+                            <?php
+                            if (!isset($_SESSION['username'])) {
+                                echo " <li class='nav-item'>
+                                <a href='' class='nav-link'>Welcome guest</a>
+                            </li> ";
+                            } else {
+                                echo " <li class='nav-item'>
+                                <a href='' class='nav-link'>Welcome " . $_SESSION['username'] . "</a>
+                            </li> ";
+                            }
+
+                            if (!isset($_SESSION['username'])) {
+                                echo " <li class='nav-item'>
+                                <a href='admin_login.php' class='nav-link'>Login</a>
+                            </li> ";
+                            } else {
+                                echo " <li class='nav-item'>
+                                <a href='../users_area/logout.php' class='nav-link'>Logout</a>
+                            </li> ";
+                            }
+                            ?>
+
+                            <!-- <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <h5>Welcome guest</h1>
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </nav>
                 </div>
@@ -151,7 +175,7 @@ include('../includes/connect.php');
                 if (isset($_GET['delete_user'])) {
                     include('delete_user.php');
                 }
-                
+
                 ?>
             </div>
         </div>
@@ -163,7 +187,7 @@ include('../includes/connect.php');
 
 
 
-    
+
 </body>
 
 </html>
