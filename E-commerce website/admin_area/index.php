@@ -98,33 +98,60 @@ include('../includes/connect.php');
                 if (isset($_GET['view_product'])) {
                     include('view_product.php');
                 }
-                if (isset($_GET['insert_category'])) {
-                    include('insert_categories.php');
-                }
-                if (isset($_GET['view_category'])) {
-                    include('view_category.php');
-                }
-                if (isset($_GET['insert_brands'])) {
-                    include('insert_brands.php');
-                }
-                if (isset($_GET['view_brands'])) {
-                    include('view_brands.php');
-                }
-                if (isset($_GET['all_orders'])) {
-                    include('all_orders.php');
-                }
-                if (isset($_GET['all_payments'])) {
-                    include('all_payments.php');
-                }
-                if (isset($_GET['list_users'])) {
-                    include('list_users.php');
-                }
                 if (isset($_GET['edit_product'])) {
                     include('edit_product.php');
                 }
                 if (isset($_GET['delete_product'])) {
                     include('delete_product.php');
                 }
+
+                if (isset($_GET['insert_category'])) {
+                    include('insert_categories.php');
+                }
+                if (isset($_GET['view_category'])) {
+                    include('view_category.php');
+                }
+                if (isset($_GET['edit_category'])) {
+                    include('edit_category.php');
+                }
+                if (isset($_GET['delete_category'])) {
+                    include('delete_category.php');
+                }
+
+                if (isset($_GET['insert_brands'])) {
+                    include('insert_brands.php');
+                }
+                if (isset($_GET['view_brands'])) {
+                    include('view_brands.php');
+                }
+                if (isset($_GET['edit_brand'])) {
+                    include('edit_brand.php');
+                }
+                if (isset($_GET['delete_brand'])) {
+                    include('delete_brand.php');
+                }
+
+                if (isset($_GET['all_orders'])) {
+                    include('all_orders.php');
+                }
+                if (isset($_GET['delete_order'])) {
+                    include('delete_order.php');
+                }
+
+                if (isset($_GET['all_payments'])) {
+                    include('all_payments.php');
+                }
+                if (isset($_GET['delete_payment'])) {
+                    include('delete_payment.php');
+                }
+
+                if (isset($_GET['list_users'])) {
+                    include('list_users.php');
+                }
+                if (isset($_GET['delete_user'])) {
+                    include('delete_user.php');
+                }
+                
                 ?>
             </div>
         </div>

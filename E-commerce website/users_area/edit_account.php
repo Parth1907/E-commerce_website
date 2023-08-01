@@ -12,6 +12,7 @@ if (isset($_GET['edit_account'])) {
     $email = $row_fetch['user_email'];
     $address = $row_fetch['user_address'];
     $contact = $row_fetch['user_mobile'];
+    
 
     // to update the previous info 
     if (isset($_POST['update'])) {
@@ -22,18 +23,34 @@ if (isset($_GET['edit_account'])) {
         $updated_image = $_FILES['user_img']['name'];
         $temp_image = $_FILES['user_img']['tmp_name'];
         move_uploaded_file($temp_image, "user_img/$updated_image");
-
-        $update_query = "Update `user_table` 
-        set username='$updated_username',
-        user_email='$updated_email',
-        user_address='$updated_address',
-        user_image='$updated_image',
-        user_mobile='$updated_contact' where user_id=$user_id";
-        if ($result_updated_query = mysqli_query($con, $update_query)) {
-            echo "<script>alert('Succesfully inserted the updated user details')</script>";
-            echo "<script>window.open('logout.php','_self')</script>";
-        }
+        // echo $user_img;
+        if (empty($updated_image)) {
+            $updated_image=$user_img;
+        } 
         
+        // if (empty($updated_img)) {
+            $update_query = "Update `user_table` 
+            set username='$updated_username',
+            user_email='$updated_email',
+            user_address='$updated_address',
+            user_image='$updated_image',
+            user_mobile='$updated_contact' where user_id=$user_id";
+            if ($result_updated_query = mysqli_query($con, $update_query)) {
+                echo "<script>alert('Succesfully inserted the user details')</script>";
+                echo "<script>window.open('logout.php','_self')</script>";
+            }
+        // }
+        // else {
+        //     $update_query = "Update `user_table` 
+        //     set username='$updated_username',
+        //     user_email='$updated_email',
+        //     user_address='$updated_address',
+        //     user_mobile='$updated_contact' where user_id=$user_id";
+        //     if ($result_updated_query = mysqli_query($con, $update_query)) {
+        //         echo "<script>alert('Succesfully inserted the updated user details')</script>";
+        //         echo "<script>window.open('logout.php','_self')</script>";
+        //     }
+        // }
     }
 }
 

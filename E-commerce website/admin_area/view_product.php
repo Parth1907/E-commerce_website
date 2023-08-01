@@ -1,13 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View products</title>
-</head>
-
-<body> -->
 <div class="d-flex flex-column align-items-center">
     <h3 class="text-center text-success">All products</h3>
     <table class="table table-bordered mt-3 w-75 text-center">
@@ -36,7 +27,7 @@
                 $product_image = $row_orders['product_image1'];
                 $product_price = $row_orders['product_price'];
                 $status = $row_orders['status'];
-                ?>
+            ?>
 
                 <tr>
                     <td>
@@ -76,6 +67,3 @@
         </tbody>
     </table>
 </div>
-<!-- </body>
-
-</html> -->
