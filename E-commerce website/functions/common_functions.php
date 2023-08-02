@@ -20,7 +20,7 @@ function getProducts()
                 $brand_id = $row['brand_id'];
                 echo "
                 <div class='col-md-4 mb-2'>
-                    <div class='card' style='width: 18rem; height: 25rem'>
+                    <div class='card' style='width: 18rem; height: 25rem; margin-left: 12.5%'>
                         <img src='./admin_area/product_images/$product_image1' class='card-img-top' alt='$product_title'>
                         <div class='card-body'>
                             <h5 class='card-title'>$product_title</h5>
@@ -57,7 +57,7 @@ function getAllProducts()
                 $brand_id = $row['brand_id'];
                 echo "
                 <div class='col-md-4 mb-2'>
-                    <div class='card' style='width: 18rem; height: 25rem'>
+                    <div class='card' style='width: 18rem; height: 25rem; margin-left: 12.5%'>
                         <img src='./admin_area/product_images/$product_image1' class='card-img-top' alt='$product_title'>
                         <div class='card-body'>
                             <h5 class='card-title'>$product_title</h5>
@@ -100,7 +100,7 @@ function getUniqueCategory()
             $brand_id = $row['brand_id'];
             echo "
             <div class='col-md-4 mb-2'>
-                <div class='card' style='width: 18rem; height: 25rem'>
+                <div class='card' style='width: 18rem; height: 25rem; margin-left: 12.5%'>
                     <img src='./admin_area/product_images/$product_image1' class='card-img-top' alt='$product_title'>
                     <div class='card-body'>
                         <h5 class='card-title'>$product_title</h5>
@@ -141,7 +141,7 @@ function getUniqueBrand()
             $brand_id = $row['brand_id'];
             echo "
             <div class='col-md-4 mb-2'>
-                <div class='card' style='width: 18rem; height: 25rem'>
+                <div class='card' style='width: 18rem; height: 25rem; margin-left: 12.5%'>
                     <img src='./admin_area/product_images/$product_image1' class='card-img-top' alt='$product_title'>
                     <div class='card-body'>
                         <h5 class='card-title'>$product_title</h5>
@@ -207,7 +207,7 @@ function search_product()
             $brand_id = $row['brand_id'];
             echo "
             <div class='col-md-4 mb-2'>
-                <div class='card' style='width: 18rem; height: 25rem'>
+                <div class='card' style='width: 18rem; height: 25rem; margin-left: 12.5%'>
                     <img src='./admin_area/product_images/$product_image1' class='card-img-top' alt='$product_title'>
                     <div class='card-body'>
                         <h5 class='card-title'>$product_title</h5>
@@ -247,7 +247,7 @@ function viewDetails()
                     $brand_id = $row['brand_id'];
                     echo "
                     <div class='col-md-4 mb-2'>
-                        <div class='card' style='width: 18rem;'>
+                        <div class='card' style='width: 18rem; ; margin-left: 12.5%'>
                             <img src='./admin_area/product_images/$product_image1' class='card-img-top' alt='$product_title'>
                             <div class='card-body'>
                                 <h5 class='card-title'>$product_title</h5>
