@@ -24,7 +24,8 @@ if (isset($_POST['admin_login'])) {
             } else {
                 echo "<script>alert('Invalid Credentails')</script>";
             }
-        } 
+        } else {
+            echo "<script>alert('Invalid Credentails')</script>";
     } else {
         echo "<script>alert('No such admin credentials exists')</script>";
     }
